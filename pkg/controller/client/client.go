@@ -27,7 +27,7 @@ import (
 // can easily open and close gRPC connection.
 type Client interface {
 	pb.ControllerClient
-	pb.FileShareControllerClient
+	//pb.FileShareControllerClient
 
 	Connect(edp string) error
 
@@ -39,7 +39,7 @@ type Client interface {
 // in the long run.
 type client struct {
 	pb.ControllerClient
-	pb.FileShareControllerClient
+	//pb.FileShareControllerClient
 	*grpc.ClientConn
 }
 
@@ -54,7 +54,7 @@ func (c *client) Connect(edp string) error {
 	}
 	// Create controller client via the connection.
 	c.ControllerClient = pb.NewControllerClient(conn)
-	c.FileShareControllerClient = pb.NewFileShareControllerClient(conn)
+	//c.FileShareControllerClient = pb.NewFileShareControllerClient(conn)
 	c.ClientConn = conn
 
 	return nil

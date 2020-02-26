@@ -26,7 +26,7 @@ ubuntu-dev-setup:
 	sudo apt-get update && sudo apt-get install -y \
 	  build-essential gcc librados-dev librbd-dev
 
-build: prebuild  osdsapiserver
+build: prebuild  osdsapiserver osdslet osdsdock
 
 prebuild:
 	mkdir -p $(BUILD_DIR)
@@ -37,7 +37,10 @@ prebuild:
 osdsapiserver:
 	go build -ldflags '-w -s' -o $(BUILD_DIR)/bin/osdsapiserver github.com/telemetry/cmd/osdsapiserver
 
-
+osdslet:
+	go build -ldflags '-w -s' -o $(BUILD_DIR)/bin/osdslet github.com/telemetry/cmd/osdslet
+osdsdock:
+	go build -ldflags '-w -s' -o $(BUILD_DIR)/bin/osdsdok github.com/telemetry/cmd/osdsdock
 version:
 	@echo ${VERSION}
 
