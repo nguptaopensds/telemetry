@@ -24,11 +24,11 @@ import (
 	"fmt"
 	"strings"
 
-	c "github.com/telemetry/pkg/context"
-	"github.com/telemetry/pkg/db/drivers/etcd"
-	"github.com/telemetry/pkg/model"
-	. "github.com/telemetry/pkg/utils/config"
-	fakedb "github.com/telemetry/testutils/db"
+	c "github.com/sodafoundation/telemetry/pkg/context"
+	"github.com/sodafoundation/telemetry/pkg/db/drivers/etcd"
+	"github.com/sodafoundation/telemetry/pkg/model"
+	. "github.com/sodafoundation/telemetry/pkg/utils/config"
+	fakedb "github.com/sodafoundation/telemetry/testutils/db"
 )
 
 // C is a global variable that controls database module.

@@ -25,9 +25,9 @@ import (
 
 	"github.com/astaxie/beego/httplib"
 	log "github.com/golang/glog"
-	pb "github.com/telemetry/pkg/model/proto"
-	"github.com/telemetry/pkg/utils"
-	"github.com/telemetry/pkg/utils/pwd"
+	pb "github.com/sodafoundation/telemetry/pkg/model/proto"
+	"github.com/sodafoundation/telemetry/pkg/utils"
+	"github.com/sodafoundation/telemetry/pkg/utils/pwd"
 )
 
 type ArrayInnerError struct {

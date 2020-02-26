@@ -20,13 +20,13 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/telemetry/pkg/utils"
+	"github.com/sodafoundation/telemetry/pkg/utils"
 
-	"github.com/telemetry/pkg/context"
-	"github.com/telemetry/pkg/db"
-	"github.com/telemetry/pkg/model"
-	. "github.com/telemetry/testutils/collection"
-	dbtest "github.com/telemetry/testutils/db/testing"
+	"github.com/sodafoundation/telemetry/pkg/context"
+	"github.com/sodafoundation/telemetry/pkg/db"
+	"github.com/sodafoundation/telemetry/pkg/model"
+	. "github.com/sodafoundation/telemetry/testutils/collection"
+	dbtest "github.com/sodafoundation/telemetry/testutils/db/testing"
 )
 
 var assertTestResult = func(t *testing.T, got, expected interface{}) {

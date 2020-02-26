@@ -18,7 +18,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/telemetry/pkg/utils/exec"
+	"github.com/sodafoundation/telemetry/pkg/utils/exec"
 )
 
 func TestNewMetricCli(t *testing.T) {

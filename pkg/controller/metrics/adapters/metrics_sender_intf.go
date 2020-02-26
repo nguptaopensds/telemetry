@@ -13,7 +13,7 @@
 // limitations under the License.
 package adapters
 
-import "github.com/telemetry/pkg/model"
+import "github.com/sodafoundation/telemetry/pkg/model"
 
 type MetricsSenderIntf interface {
 	GetMetricsSender() MetricsSenderIntf

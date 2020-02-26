@@ -21,7 +21,7 @@ import (
 	"sync"
 
 	log "github.com/golang/glog"
-	"github.com/telemetry/contrib/drivers/lvm"
+	"github.com/sodafoundation/telemetry/contrib/drivers/lvm"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 )

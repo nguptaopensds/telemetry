@@ -26,8 +26,8 @@ import (
 	"strings"
 
 	log "github.com/golang/glog"
-	"github.com/telemetry/pkg/controller/client"
-	"github.com/telemetry/pkg/model"
+	"github.com/sodafoundation/telemetry/pkg/controller/client"
+	"github.com/sodafoundation/telemetry/pkg/model"
 )
 
 func NewAlertPortal() *AlertPortal {
@@ -66,7 +66,7 @@ func (v *AlertPortal) CreateAlert() {
 	body := strings.NewReader(string(b[:]))
 
 	// Alert manager will be co-located on the server, default port is 9093 for the POST API endpoint
-	// Raised issue https://github.com/telemetry/issues/691 to make this configurable
+	// Raised issue https://github.com/sodafoundation/telemetry/issues/691 to make this configurable
 	req, err := http.NewRequest("POST", "http://localhost:9093/api/v1/alerts", body)
 	if err != nil {
 		// handle err

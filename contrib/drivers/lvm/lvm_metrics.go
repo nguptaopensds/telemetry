@@ -20,7 +20,7 @@ import (
 	"time"
 
 	log "github.com/golang/glog"
-	"github.com/telemetry/pkg/model"
+	"github.com/sodafoundation/telemetry/pkg/model"
 	"gopkg.in/yaml.v2"
 )
 

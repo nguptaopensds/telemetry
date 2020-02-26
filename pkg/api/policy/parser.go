@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/telemetry/pkg/utils"
+	"github.com/sodafoundation/telemetry/pkg/utils"
 )
 
 type TokenPair struct {

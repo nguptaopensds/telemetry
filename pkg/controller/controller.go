@@ -21,13 +21,13 @@ package controller
 import (
 	"context"
 	log "github.com/golang/glog"
-	osdsCtx "github.com/telemetry/pkg/context"
+	osdsCtx "github.com/sodafoundation/telemetry/pkg/context"
 
-	"github.com/telemetry/pkg/controller/metrics"
+	"github.com/sodafoundation/telemetry/pkg/controller/metrics"
 
-	"github.com/telemetry/pkg/db"
-	"github.com/telemetry/pkg/model"
-	pb "github.com/telemetry/pkg/model/proto"
+	"github.com/sodafoundation/telemetry/pkg/db"
+	"github.com/sodafoundation/telemetry/pkg/model"
+	pb "github.com/sodafoundation/telemetry/pkg/model/proto"
 )
 
 const (

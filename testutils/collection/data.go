@@ -20,7 +20,7 @@ This package includes a collection of fake stuffs for testing work.
 package collection
 
 import (
-	"github.com/telemetry/pkg/model"
+	"github.com/sodafoundation/telemetry/pkg/model"
 )
 
 var (
@@ -649,7 +649,7 @@ var (
 
 // The Byte*** variable here is designed for unit test in client package.
 // For how to ultilize these pre-assigned variables, please refer to
-// (github.com/telemetry/client/dock_test.go).
+// (github.com/sodafoundation/telemetry/client/dock_test.go).
 var (
 	ByteProfile = `{
 		"id": "1106b972-66ef-11e7-b172-db03f3689c9c",
@@ -1122,7 +1122,7 @@ var (
 
 // The StringSlice*** variable here is designed for unit test in etcd package.
 // For how to ultilize these pre-assigned variables, please refer to
-// (github.com/telemetry/pkg/db/drivers/etcd/etcd_test.go).
+// (github.com/sodafoundation/telemetry/pkg/db/drivers/etcd/etcd_test.go).
 var (
 	StringSliceProfiles = []string{
 		`{

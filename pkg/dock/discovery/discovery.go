@@ -27,11 +27,11 @@ import (
 	log "github.com/golang/glog"
 
 	uuid "github.com/satori/go.uuid"
-	"github.com/telemetry/contrib/drivers/utils/config"
-	c "github.com/telemetry/pkg/context"
-	"github.com/telemetry/pkg/db"
-	"github.com/telemetry/pkg/model"
-	. "github.com/telemetry/pkg/utils/config"
+	"github.com/sodafoundation/telemetry/contrib/drivers/utils/config"
+	c "github.com/sodafoundation/telemetry/pkg/context"
+	"github.com/sodafoundation/telemetry/pkg/db"
+	"github.com/sodafoundation/telemetry/pkg/model"
+	. "github.com/sodafoundation/telemetry/pkg/utils/config"
 )
 
 const (

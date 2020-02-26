@@ -18,7 +18,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/telemetry/pkg/model"
+	"github.com/sodafoundation/telemetry/pkg/model"
 )
 
 type Config struct {

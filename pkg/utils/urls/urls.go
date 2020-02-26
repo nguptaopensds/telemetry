@@ -17,7 +17,7 @@ package urls
 import (
 	"strings"
 
-	"github.com/telemetry/pkg/utils/constants"
+	"github.com/sodafoundation/telemetry/pkg/utils/constants"
 )
 
 const (

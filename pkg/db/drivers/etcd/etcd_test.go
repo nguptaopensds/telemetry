@@ -25,9 +25,9 @@ import (
 	"strings"
 	"testing"
 
-	c "github.com/telemetry/pkg/context"
-	"github.com/telemetry/pkg/model"
-	. "github.com/telemetry/testutils/collection"
+	c "github.com/sodafoundation/telemetry/pkg/context"
+	"github.com/sodafoundation/telemetry/pkg/model"
+	. "github.com/sodafoundation/telemetry/testutils/collection"
 )
 
 type fakeClientCaller struct{}

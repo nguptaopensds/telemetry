@@ -19,9 +19,9 @@ import (
 	"time"
 
 	log "github.com/golang/glog"
-	. "github.com/telemetry/contrib/drivers/utils/config"
-	"github.com/telemetry/pkg/model"
-	"github.com/telemetry/pkg/utils/config"
+	. "github.com/sodafoundation/telemetry/contrib/drivers/utils/config"
+	"github.com/sodafoundation/telemetry/pkg/model"
+	"github.com/sodafoundation/telemetry/pkg/utils/config"
 	uuid "github.com/satori/go.uuid"
 	"gopkg.in/yaml.v2"
 )

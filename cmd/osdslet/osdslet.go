@@ -22,12 +22,12 @@ package main
 import (
 	"flag"
 
-	c "github.com/telemetry/pkg/controller"
-	"github.com/telemetry/pkg/db"
-	. "github.com/telemetry/pkg/utils/config"
-	"github.com/telemetry/pkg/utils/constants"
-	"github.com/telemetry/pkg/utils/daemon"
-	"github.com/telemetry/pkg/utils/logs"
+	c "github.com/sodafoundation/telemetry/pkg/controller"
+	"github.com/sodafoundation/telemetry/pkg/db"
+	. "github.com/sodafoundation/telemetry/pkg/utils/config"
+	"github.com/sodafoundation/telemetry/pkg/utils/constants"
+	"github.com/sodafoundation/telemetry/pkg/utils/daemon"
+	"github.com/sodafoundation/telemetry/pkg/utils/logs"
 )
 
 func init() {

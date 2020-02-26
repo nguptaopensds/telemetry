@@ -27,11 +27,11 @@ import (
 	"time"
 
 	log "github.com/golang/glog"
-	c "github.com/telemetry/pkg/context"
-	"github.com/telemetry/pkg/db"
-	"github.com/telemetry/pkg/model"
-	"github.com/telemetry/pkg/utils"
-	"github.com/telemetry/pkg/utils/constants"
+	c "github.com/sodafoundation/telemetry/pkg/context"
+	"github.com/sodafoundation/telemetry/pkg/db"
+	"github.com/sodafoundation/telemetry/pkg/model"
+	"github.com/sodafoundation/telemetry/pkg/utils"
+	"github.com/sodafoundation/telemetry/pkg/utils/constants"
 	uuid "github.com/satori/go.uuid"
 )
 

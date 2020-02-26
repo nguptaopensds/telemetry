@@ -22,7 +22,7 @@ import (
 	"strings"
 
 	log "github.com/golang/glog"
-	"github.com/telemetry/pkg/utils"
+	"github.com/sodafoundation/telemetry/pkg/utils"
 )
 
 func init() {

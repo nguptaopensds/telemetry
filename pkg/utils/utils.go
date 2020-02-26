@@ -25,7 +25,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/telemetry/pkg/utils/constants"
+	"github.com/sodafoundation/telemetry/pkg/utils/constants"
 
 	log "github.com/golang/glog"
 )

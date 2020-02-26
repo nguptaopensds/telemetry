@@ -22,11 +22,11 @@ package main
 import (
 	"flag"
 
-	"github.com/telemetry/pkg/api"
-	"github.com/telemetry/pkg/db"
-	. "github.com/telemetry/pkg/utils/config"
-	"github.com/telemetry/pkg/utils/daemon"
-	"github.com/telemetry/pkg/utils/logs"
+	"github.com/sodafoundation/telemetry/pkg/api"
+	"github.com/sodafoundation/telemetry/pkg/db"
+	. "github.com/sodafoundation/telemetry/pkg/utils/config"
+	"github.com/sodafoundation/telemetry/pkg/utils/daemon"
+	"github.com/sodafoundation/telemetry/pkg/utils/logs"
 )
 
 func init() {

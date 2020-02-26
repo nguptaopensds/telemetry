@@ -35,12 +35,12 @@ prebuild:
 
 
 osdsapiserver:
-	go build -ldflags '-w -s' -o $(BUILD_DIR)/bin/osdsapiserver github.com/telemetry/cmd/osdsapiserver
+	go build -ldflags '-w -s' -o $(BUILD_DIR)/bin/osdsapiserver github.com/sodafoundation/telemetry/cmd/osdsapiserver
 
 osdslet:
-	go build -ldflags '-w -s' -o $(BUILD_DIR)/bin/osdslet github.com/telemetry/cmd/osdslet
+	go build -ldflags '-w -s' -o $(BUILD_DIR)/bin/osdslet github.com/sodafoundation/telemetry/cmd/osdslet
 osdsdock:
-	go build -ldflags '-w -s' -o $(BUILD_DIR)/bin/osdsdok github.com/telemetry/cmd/osdsdock
+	go build -ldflags '-w -s' -o $(BUILD_DIR)/bin/osdsdok github.com/sodafoundation/telemetry/cmd/osdsdock
 version:
 	@echo ${VERSION}
 

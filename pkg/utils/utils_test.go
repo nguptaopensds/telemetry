@@ -19,8 +19,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/telemetry/pkg/model"
-	"github.com/telemetry/pkg/utils/constants"
+	"github.com/sodafoundation/telemetry/pkg/model"
+	"github.com/sodafoundation/telemetry/pkg/utils/constants"
 )
 
 func TestRvRepElement(t *testing.T) {

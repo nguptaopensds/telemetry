@@ -31,10 +31,10 @@ import (
 	"strconv"
 
 	log "github.com/golang/glog"
-	"github.com/telemetry/pkg/controller/metrics/adapters"
-	"github.com/telemetry/pkg/dock/client"
-	"github.com/telemetry/pkg/model"
-	pb "github.com/telemetry/pkg/model/proto"
+	"github.com/sodafoundation/telemetry/pkg/controller/metrics/adapters"
+	"github.com/sodafoundation/telemetry/pkg/dock/client"
+	"github.com/sodafoundation/telemetry/pkg/model"
+	pb "github.com/sodafoundation/telemetry/pkg/model/proto"
 )
 
 // Controller is an interface for exposing some operations of metric controllers.

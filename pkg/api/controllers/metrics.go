@@ -29,12 +29,12 @@ import (
 	"os/exec"
 
 	log "github.com/golang/glog"
-	"github.com/telemetry/pkg/api/policy"
-	c "github.com/telemetry/pkg/context"
-	"github.com/telemetry/pkg/controller/client"
-	"github.com/telemetry/pkg/model"
-	pb "github.com/telemetry/pkg/model/proto"
-	. "github.com/telemetry/pkg/utils/config"
+	"github.com/sodafoundation/telemetry/pkg/api/policy"
+	c "github.com/sodafoundation/telemetry/pkg/context"
+	"github.com/sodafoundation/telemetry/pkg/controller/client"
+	"github.com/sodafoundation/telemetry/pkg/model"
+	pb "github.com/sodafoundation/telemetry/pkg/model/proto"
+	. "github.com/sodafoundation/telemetry/pkg/utils/config"
 )
 
 // prometheus constants

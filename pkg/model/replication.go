@@ -18,7 +18,7 @@ This module implements the common data structure.
 
 package model
 
-import "github.com/telemetry/pkg/model/proto"
+import "github.com/sodafoundation/telemetry/pkg/model/proto"
 
 const (
 	ReplicationModeSync         = "sync"

@@ -8,7 +8,7 @@ import (
 	"strings"
 
 	log "github.com/golang/glog"
-	. "github.com/telemetry/contrib/drivers/utils/config"
+	. "github.com/sodafoundation/telemetry/contrib/drivers/utils/config"
 )
 
 type AuthOptions struct {

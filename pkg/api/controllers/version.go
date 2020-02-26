@@ -23,7 +23,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/telemetry/pkg/model"
+	"github.com/sodafoundation/telemetry/pkg/model"
 )
 
 // KnownVersions

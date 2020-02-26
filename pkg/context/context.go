@@ -24,7 +24,7 @@ import (
 
 	"github.com/astaxie/beego/context"
 	log "github.com/golang/glog"
-	"github.com/telemetry/pkg/model"
+	"github.com/sodafoundation/telemetry/pkg/model"
 )
 
 func NewAdminContext() *Context {

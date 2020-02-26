@@ -17,7 +17,7 @@ package utils
 import (
 	"testing"
 
-	pb "github.com/telemetry/pkg/model/proto"
+	pb "github.com/sodafoundation/telemetry/pkg/model/proto"
 )
 
 func TestGetInitiatorName(t *testing.T) {

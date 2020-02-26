@@ -25,12 +25,12 @@ import (
 
 	log "github.com/golang/glog"
 
-	"github.com/telemetry/contrib/drivers"
-	"github.com/telemetry/pkg/dock/discovery"
+	"github.com/sodafoundation/telemetry/contrib/drivers"
+	"github.com/sodafoundation/telemetry/pkg/dock/discovery"
 
 
-	"github.com/telemetry/pkg/model"
-	pb "github.com/telemetry/pkg/model/proto"
+	"github.com/sodafoundation/telemetry/pkg/model"
+	pb "github.com/sodafoundation/telemetry/pkg/model/proto"
 	"google.golang.org/grpc"
 
 )

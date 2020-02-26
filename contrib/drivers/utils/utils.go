@@ -15,7 +15,7 @@
 package utils
 
 import (
-	pb "github.com/telemetry/pkg/model/proto"
+	pb "github.com/sodafoundation/telemetry/pkg/model/proto"
 )
 
 // GetInitiatorName returns initiator name by protocol

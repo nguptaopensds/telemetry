@@ -24,9 +24,9 @@ import (
 
 	bctx "github.com/astaxie/beego/context"
 	log "github.com/golang/glog"
-	"github.com/telemetry/pkg/context"
-	"github.com/telemetry/pkg/utils"
-	"github.com/telemetry/pkg/utils/config"
+	"github.com/sodafoundation/telemetry/pkg/context"
+	"github.com/sodafoundation/telemetry/pkg/utils"
+	"github.com/sodafoundation/telemetry/pkg/utils/config"
 )
 
 var enforcer *Enforcer

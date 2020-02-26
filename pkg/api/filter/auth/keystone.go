@@ -26,11 +26,11 @@ import (
 	"github.com/gophercloud/gophercloud"
 	"github.com/gophercloud/gophercloud/openstack"
 	"github.com/gophercloud/gophercloud/openstack/identity/v3/tokens"
-	"github.com/telemetry/pkg/context"
-	"github.com/telemetry/pkg/utils"
-	"github.com/telemetry/pkg/utils/config"
-	"github.com/telemetry/pkg/utils/constants"
-	"github.com/telemetry/pkg/utils/pwd"
+	"github.com/sodafoundation/telemetry/pkg/context"
+	"github.com/sodafoundation/telemetry/pkg/utils"
+	"github.com/sodafoundation/telemetry/pkg/utils/config"
+	"github.com/sodafoundation/telemetry/pkg/utils/constants"
+	"github.com/sodafoundation/telemetry/pkg/utils/pwd"
 )
 
 func NewKeystone() AuthBase {

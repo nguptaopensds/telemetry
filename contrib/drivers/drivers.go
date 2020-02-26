@@ -22,12 +22,12 @@ plugin, just modify Init() and Clean() method.
 package drivers
 
 import (
-	"github.com/telemetry/contrib/drivers/ceph"
-	"github.com/telemetry/contrib/drivers/huawei/oceanstor"
-	"github.com/telemetry/contrib/drivers/lvm"
+	"github.com/sodafoundation/telemetry/contrib/drivers/ceph"
+	"github.com/sodafoundation/telemetry/contrib/drivers/huawei/oceanstor"
+	"github.com/sodafoundation/telemetry/contrib/drivers/lvm"
 	
-	"github.com/telemetry/contrib/drivers/utils/config"
-	"github.com/telemetry/pkg/model"
+	"github.com/sodafoundation/telemetry/contrib/drivers/utils/config"
+	"github.com/sodafoundation/telemetry/pkg/model"
 
 )
 

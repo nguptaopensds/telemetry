@@ -18,9 +18,9 @@ import (
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/context"
 	log "github.com/golang/glog"
-	c "github.com/telemetry/pkg/context"
-	"github.com/telemetry/pkg/utils/config"
-	"github.com/telemetry/pkg/utils/constants"
+	c "github.com/sodafoundation/telemetry/pkg/context"
+	"github.com/sodafoundation/telemetry/pkg/utils/config"
+	"github.com/sodafoundation/telemetry/pkg/utils/constants"
 )
 
 type AuthBase interface {

@@ -18,10 +18,10 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/telemetry/contrib/drivers/ceph"
-	"github.com/telemetry/contrib/drivers/lvm"
-	"github.com/telemetry/contrib/drivers/openstack/cinder"
-	sample "github.com/telemetry/testutils/driver"
+	"github.com/sodafoundation/telemetry/contrib/drivers/ceph"
+	"github.com/sodafoundation/telemetry/contrib/drivers/lvm"
+	"github.com/sodafoundation/telemetry/contrib/drivers/openstack/cinder"
+	sample "github.com/sodafoundation/telemetry/testutils/driver"
 )
 
 func TestInit(t *testing.T) {

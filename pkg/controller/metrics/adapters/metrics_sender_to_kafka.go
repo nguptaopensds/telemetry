@@ -18,8 +18,8 @@ import (
 	"encoding/json"
 
 	log "github.com/golang/glog"
-	"github.com/telemetry/pkg/model"
-	. "github.com/telemetry/pkg/utils/config"
+	"github.com/sodafoundation/telemetry/pkg/model"
+	. "github.com/sodafoundation/telemetry/pkg/utils/config"
 	"github.com/segmentio/kafka-go"
 )
 

@@ -20,7 +20,7 @@ import (
 
 
 	log "github.com/golang/glog"
-	pb "github.com/telemetry/pkg/model/proto"
+	pb "github.com/sodafoundation/telemetry/pkg/model/proto"
 	"google.golang.org/grpc"
 )
 

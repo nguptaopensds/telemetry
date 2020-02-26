@@ -26,7 +26,7 @@ import (
 	"time"
 
 	"github.com/go-ini/ini"
-	"github.com/telemetry/pkg/utils/constants"
+	"github.com/sodafoundation/telemetry/pkg/utils/constants"
 )
 
 const (

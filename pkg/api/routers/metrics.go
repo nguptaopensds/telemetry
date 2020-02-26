@@ -17,8 +17,8 @@ package routers
 import (
 	"github.com/astaxie/beego"
 
-	"github.com/telemetry/pkg/api/controllers"
-	"github.com/telemetry/pkg/utils/constants"
+	"github.com/sodafoundation/telemetry/pkg/api/controllers"
+	"github.com/sodafoundation/telemetry/pkg/utils/constants"
 )
 
 func init() {

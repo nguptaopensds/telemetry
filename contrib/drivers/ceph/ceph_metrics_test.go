@@ -20,9 +20,9 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/telemetry/pkg/utils/exec"
+	"github.com/sodafoundation/telemetry/pkg/utils/exec"
 
-	"github.com/telemetry/pkg/model"
+	"github.com/sodafoundation/telemetry/pkg/model"
 )
 
 var pool_Label map[string]string = map[string]string{"cluster": "ceph", "pool": "rbd"}

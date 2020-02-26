@@ -23,9 +23,9 @@ package sample
 import (
 	//"errors"
 
-	"github.com/telemetry/pkg/model"
-	pb "github.com/telemetry/pkg/model/proto"
-	. "github.com/telemetry/testutils/collection"
+	"github.com/sodafoundation/telemetry/pkg/model"
+	pb "github.com/sodafoundation/telemetry/pkg/model/proto"
+	. "github.com/sodafoundation/telemetry/testutils/collection"
 )
 
 // ReplicationDriver

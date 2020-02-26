@@ -21,7 +21,7 @@ import (
 
 	"github.com/coreos/etcd/clientv3"
 	log "github.com/golang/glog"
-	"github.com/telemetry/pkg/utils"
+	"github.com/sodafoundation/telemetry/pkg/utils"
 )
 
 var (

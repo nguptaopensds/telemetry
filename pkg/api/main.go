@@ -25,15 +25,15 @@ import (
 	"strings"
 
 	"github.com/astaxie/beego"
-	"github.com/telemetry/pkg/api/filter/accesslog"
-	"github.com/telemetry/pkg/api/filter/auth"
-	"github.com/telemetry/pkg/api/filter/context"
-	"github.com/telemetry/pkg/api/filter/validation"
-	cfg "github.com/telemetry/pkg/utils/config"
-	"github.com/telemetry/pkg/utils/constants"
+	"github.com/sodafoundation/telemetry/pkg/api/filter/accesslog"
+	"github.com/sodafoundation/telemetry/pkg/api/filter/auth"
+	"github.com/sodafoundation/telemetry/pkg/api/filter/context"
+	"github.com/sodafoundation/telemetry/pkg/api/filter/validation"
+	cfg "github.com/sodafoundation/telemetry/pkg/utils/config"
+	"github.com/sodafoundation/telemetry/pkg/utils/constants"
 
 	// Load the API routers
-	_ "github.com/telemetry/pkg/api/routers"
+	_ "github.com/sodafoundation/telemetry/pkg/api/routers"
 )
 
 const (

@@ -17,7 +17,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/telemetry/pkg/model"
+	"github.com/sodafoundation/telemetry/pkg/model"
 )
 
 // Supported metrics
