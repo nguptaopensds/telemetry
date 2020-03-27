@@ -41,7 +41,7 @@ const (
 	PortIdx
 )
 
-func Run(apiServerCfg cfg.OsdsApiServer) {
+func Run(apiServerCfg cfg.TelemetryApi) {
 
 	if apiServerCfg.HTTPSEnabled {
 		if apiServerCfg.BeegoHTTPSCertFile == "" || apiServerCfg.BeegoHTTPSKeyFile == "" {

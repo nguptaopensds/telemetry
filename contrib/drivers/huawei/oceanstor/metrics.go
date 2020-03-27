@@ -291,7 +291,7 @@ func (d *MetricDriver) CollectMetrics() ([]*model.MetricSpec, error) {
 
 func (d *MetricDriver) Setup() (err error) {
 	// Read huawei oceanstor config file
-	path := config.CONF.OsdsDock.Backends.HuaweiOceanStorBlock.ConfigPath
+	path := config.CONF.TelemetryDock.Backends.HuaweiOceanStorBlock.ConfigPath
 	if "" == path {
 		path = defaultConfPath
 	}

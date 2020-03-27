@@ -32,7 +32,7 @@ const (
 )
 
 func init() {
-	CONF.OsdsDock = OsdsDock{
+	CONF.TelemetryDock = TelemetryDock{
 		ApiEndpoint:     "localhost:50050",
 		EnabledBackends: []string{"sample"},
 		Backends: Backends{

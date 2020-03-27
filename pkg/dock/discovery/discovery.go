@@ -118,10 +118,10 @@ func (pdd *provisionDockDiscoverer) Init() error {
 			Name:        b.Name,
 			Description: b.Description,
 			DriverName:  b.DriverName,
-			Endpoint:    CONF.OsdsDock.ApiEndpoint,
+			Endpoint:    CONF.TelemetryDock.ApiEndpoint,
 			NodeId:      host,
 			Type:        model.DockTypeProvioner,
-			Metadata:    map[string]string{"HostReplicationDriver": CONF.OsdsDock.HostBasedReplicationDriver},
+			Metadata:    map[string]string{"HostReplicationDriver": CONF.TelemetryDock.HostBasedReplicationDriver},
 		}
 		pdd.dcks = append(pdd.dcks, dck)
 	}

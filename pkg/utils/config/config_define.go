@@ -18,8 +18,8 @@ import "time"
 
 type Default struct{}
 
-type OsdsApiServer struct {
-	ApiEndpoint        string        `conf:"api_endpoint,localhost:50040"`
+type TelemetryApi struct {
+	ApiEndpoint        string        `conf:"api_endpoint,localhost:50060"`
 	AuthStrategy       string        `conf:"auth_strategy,noauth"`
 	ApiSpecPath        string        `conf:"api_spec_path,/etc/opensds/swagger.yaml"`
 	Daemon             bool          `conf:"daemon,false"`
@@ -47,8 +47,8 @@ type OsdsApiServer struct {
 	ConfReloadUrl string `conf:"conf_reload_url,/-/reload"`
 }
 
-type OsdsLet struct {
-	ApiEndpoint       string        `conf:"api_endpoint,localhost:50049"`
+type TelemetryCtl struct {
+	ApiEndpoint       string        `conf:"api_endpoint,localhost:50061"`
 	Daemon            bool          `conf:"daemon,false"`
 	LogFlushFrequency time.Duration `conf:"log_flush_frequency,5s"` // Default value is 5s
 	// how to push metrics to Prometheus ? options are PushGateway or NodeExporter
@@ -61,8 +61,8 @@ type OsdsLet struct {
 	GrafanaUrl              string `conf:"grafana_url,http://localhost:3000"`
 }
 
-type OsdsDock struct {
-	ApiEndpoint                string        `conf:"api_endpoint,localhost:50050"`
+type TelemetryDock struct {
+	ApiEndpoint                string        `conf:"api_endpoint,localhost:50062"`
 	DockType                   string        `conf:"dock_type,provisioner"`
 	EnabledBackends            []string      `conf:"enabled_backends,lvm"`
 	Daemon                     bool          `conf:"daemon,false"`
@@ -123,9 +123,9 @@ type KeystoneAuthToken struct {
 
 type Config struct {
 	Default           `conf:"default"`
-	OsdsApiServer     `conf:"osdsapiserver"`
-	OsdsLet           `conf:"osdslet"`
-	OsdsDock          `conf:"osdsdock"`
+	TelemetryApi      `conf:"telemetryapi"`
+	TelemetryCtl      `conf:"telemetryctl"`
+	TelemetryDock     `conf:"telemetrydock"`
 	Database          `conf:"database"`
 	KeystoneAuthToken `conf:"keystone_authtoken"`
 }

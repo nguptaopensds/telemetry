@@ -56,20 +56,20 @@ var BackupExtension string
 
 func init() {
 
-	ReloadPath = CONF.OsdsApiServer.ConfReloadUrl
+	ReloadPath = CONF.TelemetryApi.ConfReloadUrl
 	BackupExtension = ".bak"
 
-	PrometheusConfHome = CONF.OsdsApiServer.PrometheusConfHome
-	PrometheusUrl = CONF.OsdsApiServer.PrometheusUrl
-	PrometheusConfFile = CONF.OsdsApiServer.PrometheusConfFile
+	PrometheusConfHome = CONF.TelemetryApi.PrometheusConfHome
+	PrometheusUrl = CONF.TelemetryApi.PrometheusUrl
+	PrometheusConfFile = CONF.TelemetryApi.PrometheusConfFile
 
-	AlertmgrConfHome = CONF.OsdsApiServer.AlertmgrConfHome
-	AlertmgrUrl = CONF.OsdsApiServer.AlertMgrUrl
-	AlertmgrConfFile = CONF.OsdsApiServer.AlertmgrConfFile
+	AlertmgrConfHome = CONF.TelemetryApi.AlertmgrConfHome
+	AlertmgrUrl = CONF.TelemetryApi.AlertMgrUrl
+	AlertmgrConfFile = CONF.TelemetryApi.AlertmgrConfFile
 
-	GrafanaConfHome = CONF.OsdsApiServer.GrafanaConfHome
-	GrafanaRestartCmd = CONF.OsdsApiServer.GrafanaRestartCmd
-	GrafanaConfFile = CONF.OsdsApiServer.GrafanaConfFile
+	GrafanaConfHome = CONF.TelemetryApi.GrafanaConfHome
+	GrafanaRestartCmd = CONF.TelemetryApi.GrafanaRestartCmd
+	GrafanaConfFile = CONF.TelemetryApi.GrafanaConfFile
 }
 
 func NewMetricsPortal() *MetricsPortal {
@@ -100,7 +100,7 @@ func (m *MetricsPortal) GetMetrics() {
 		return
 	}
 
-	if err := m.CtrClient.Connect(CONF.OsdsLet.ApiEndpoint); err != nil {
+	if err := m.CtrClient.Connect(CONF.TelemetryCtl.ApiEndpoint); err != nil {
 		log.Error("when connecting controller client:", err)
 		return
 	}
@@ -260,7 +260,7 @@ func (m *MetricsPortal) CollectMetrics() {
 	}
 
 	// connect to the dock to collect metrics from the driver
-	if err := m.CtrClient.Connect(CONF.OsdsLet.ApiEndpoint); err != nil {
+	if err := m.CtrClient.Connect(CONF.TelemetryCtl.ApiEndpoint); err != nil {
 		log.Errorf("error when connecting controller client: %s", err.Error())
 		return
 	}
@@ -289,7 +289,7 @@ func (m *MetricsPortal) GetUrls() {
 		return
 	}
 
-	if err := m.CtrClient.Connect(CONF.OsdsLet.ApiEndpoint); err != nil {
+	if err := m.CtrClient.Connect(CONF.TelemetryCtl.ApiEndpoint); err != nil {
 		log.Error("when connecting controller client:", err)
 		return
 	}

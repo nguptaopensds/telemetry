@@ -52,7 +52,7 @@ func (g *GrpcServer) Run() error {
 		return err
 	}
 
-	log.Info("osdslet server initialized! Start listening on port:", lis.Addr())
+	log.Info("telemetryctl server initialized! Start listening on port:", lis.Addr())
 
 	// Start controller server watching loop.
 	defer s.Stop()

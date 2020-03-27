@@ -19,7 +19,7 @@ const (
 	// exactly precision to seconds.
 	TimeFormat = `2006-01-02T15:04:05`
 
-	DefaultOpensdsEndpoint = "http://localhost:50040"
+	DefaultOpensdsEndpoint = "http://localhost:50060"
 
 	// This is set for None Auth
 	DefaultTenantId = "e93b4c0934da416eb9c8d120c5d04d96"
@@ -46,10 +46,10 @@ const (
 
 	// OpensdsCtrBindEndpoint indicates the bind endpoint which the opensds
 	// controller grpc server would listen to.
-	OpensdsCtrBindEndpoint = "0.0.0.0:50049"
+	OpensdsCtrBindEndpoint = "0.0.0.0:50061"
 	// OpensdsDockBindEndpoint indicates the bind endpoint which the opensds
 	// dock grpc server would listen to.
-	OpensdsDockBindEndpoint = "0.0.0.0:50050"
+	OpensdsDockBindEndpoint = "0.0.0.0:50062"
 
 	//Storage type for profile
 	Block = "block"

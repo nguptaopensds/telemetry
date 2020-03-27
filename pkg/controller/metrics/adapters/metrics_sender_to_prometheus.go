@@ -25,7 +25,7 @@ import (
 	"github.com/prometheus/client_golang/prometheus/push"
 )
 
-var nodeExporterFolder = CONF.OsdsLet.NodeExporterWatchFolder
+var nodeExporterFolder = CONF.TelemetryCtl.NodeExporterWatchFolder
 
 type PrometheusMetricsSender struct {
 	Queue    chan *model.MetricSpec
@@ -47,11 +47,11 @@ func (p *PrometheusMetricsSender) Start() {
 				// Receive a work request.
 				log.Infof("GetMetricsSenderToPrometheus received metrics for instance %s\n and metrics %f\n", work.InstanceID, work.MetricValues[0].Value)
 
-				if CONF.OsdsLet.PrometheusPushMechanism == "NodeExporter" {
+				if CONF.TelemetryCtl.PrometheusPushMechanism == "NodeExporter" {
 					// do the actual sending work here, by writing to the file of the node_exporter of prometheus
 					writeToFile(work)
 					log.Info("GetMetricsSenderToPrometheus processed metrics write to node exporter")
-				} else if CONF.OsdsLet.PrometheusPushMechanism == "PushGateway" {
+				} else if CONF.TelemetryCtl.PrometheusPushMechanism == "PushGateway" {
 					// alternatively, we could also push the metrics to the push gateway of prometheus
 					sendToPushGateway(work)
 					log.Info("GetMetricsSenderToPrometheus processed metrics send to push gateway")
@@ -146,7 +146,7 @@ func sendToPushGateway(metrics *model.MetricSpec) {
 	gauge.SetToCurrentTime()
 	gauge.Set(metrics.MetricValues[0].Value)
 
-	pusher := push.New(CONF.OsdsLet.PushGatewayUrl, "push_gateway").
+	pusher := push.New(CONF.TelemetryCtl.PushGatewayUrl, "push_gateway").
 		Collector(gauge)
 	for lKey, lValue := range metrics.Labels {
 		pusher = pusher.Grouping(lKey, lValue)
