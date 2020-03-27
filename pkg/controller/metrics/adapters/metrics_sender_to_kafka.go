@@ -46,8 +46,8 @@ func (p *KafkaMetricsSender) Start() {
 				// do the actual sending work here
 				// make a writer that produces to topic-A, using the least-bytes distribution
 				w := kafka.NewWriter(kafka.WriterConfig{
-					Brokers:  []string{CONF.OsdsLet.KafkaEndpoint},
-					Topic:    CONF.OsdsLet.KafkaTopic,
+					Brokers:  []string{CONF.TelemetryCtl.KafkaEndpoint},
+					Topic:    CONF.TelemetryCtl.KafkaTopic,
 					Balancer: &kafka.LeastBytes{},
 				})
 

@@ -1,0 +1,9 @@
+# Docker build usage:
+# 	docker build . -t telemetryio/telemetryctl:latest
+# Docker run usage:
+# 	docker run -d --net=host -v /etc/telemetry:/etc/telemetry telemetryio/telemetry-ctl:latest
+FROM ubuntu:16.04
+MAINTAINER Leon Wang <wanghui71leon@gmail.com>
+COPY cmd/telemetryctl/telemetryctl /usr/bin
+# Define default command.
+CMD ["/usr/bin/telemetryctl"]

@@ -263,35 +263,35 @@ func TestFunctionDefaultValue(t *testing.T) {
 func TestOpensdsConfig(t *testing.T) {
 	initConf("testdata/opensds.conf", CONF)
 
-	if CONF.OsdsApiServer.ApiEndpoint != "localhost:50040" {
-		t.Error("Test OsdsApiServer.ApiEndpoint error")
+	if CONF.TelemetryApi.ApiEndpoint != "localhost:50060" {
+		t.Error("Test TelemetryApi.ApiEndpoint error")
 	}
-	if CONF.OsdsApiServer.LogFlushFrequency != 2*time.Second {
-		t.Error("Test OsdsApiServer.ApiEndpoint error")
+	if CONF.TelemetryApi.LogFlushFrequency != 2*time.Second {
+		t.Error("Test v.ApiEndpoint error")
 	}
-	if CONF.OsdsLet.ApiEndpoint != "localhost:50049" {
-		t.Error("Test OsdsLet.ApiEndpoint error")
+	if CONF.TelemetryCtl.ApiEndpoint != "localhost:50061" {
+		t.Error("Test TelemetryCtl.ApiEndpoint error")
 	}
-	if CONF.OsdsLet.LogFlushFrequency != 3*time.Second {
-		t.Error("Test OsdsLet.LogFlushFrequency error")
+	if CONF.TelemetryCtl.LogFlushFrequency != 3*time.Second {
+		t.Error("Test TelemetryCtl.LogFlushFrequency error")
 	}
-	if CONF.OsdsDock.ApiEndpoint != "localhost:50050" {
-		t.Error("Test OsdsDock.ApiEndpoint error")
+	if CONF.TelemetryDock.ApiEndpoint != "localhost:50062" {
+		t.Error("Test TelemetryDock.ApiEndpoint error")
 	}
-	if CONF.OsdsDock.DockType != "provisioner" {
-		t.Error("Test OsdsDock.DockType error")
+	if CONF.TelemetryDock.DockType != "provisioner" {
+		t.Error("Test TelemetryDock.DockType error")
 	}
-	if CONF.OsdsDock.LogFlushFrequency != 4*time.Second {
-		t.Error("Test OsdsDock.LogFlushFrequency error")
+	if CONF.TelemetryDock.LogFlushFrequency != 4*time.Second {
+		t.Error("Test TelemetryDock.LogFlushFrequency error")
 	}
-	if CONF.OsdsDock.EnabledBackends[0] != "ceph" {
-		t.Error("OsdsDock.EnabledBackends[0] error")
+	if CONF.TelemetryDock.EnabledBackends[0] != "ceph" {
+		t.Error("TelemetryDock.EnabledBackends[0] error")
 	}
-	if CONF.OsdsDock.EnabledBackends[1] != "cinder" {
-		t.Error("Test OsdsDock.EnabledBackends[1] error")
+	if CONF.TelemetryDock.EnabledBackends[1] != "cinder" {
+		t.Error("Test TelemetryDock.EnabledBackends[1] error")
 	}
-	if CONF.OsdsDock.EnabledBackends[2] != "sample" {
-		t.Error("Test OsdsDock.EnabledBackends[2] error")
+	if CONF.TelemetryDock.EnabledBackends[2] != "sample" {
+		t.Error("Test TelemetryDock.EnabledBackends[2] error")
 	}
 	if CONF.Database.Credential != "opensds:password@127.0.0.1:3306/dbname" {
 		t.Error("Test Database.Credential error")

@@ -26,21 +26,21 @@ ubuntu-dev-setup:
 	sudo apt-get update && sudo apt-get install -y \
 	  build-essential gcc librados-dev librbd-dev
 
-build: prebuild  osdsapiserver osdslet osdsdock
+build: prebuild  telemetryapi telemetryctl telemetrydock
 
 prebuild:
 	mkdir -p $(BUILD_DIR)
 
-.PHONY: osdsapiserver
+.PHONY: telemetryapi
 
 
-osdsapiserver:
-	go build -ldflags '-w -s' -o $(BUILD_DIR)/bin/osdsapiserver github.com/sodafoundation/telemetry/cmd/osdsapiserver
+telemetryapi:
+	go build -ldflags '-w -s' -o $(BUILD_DIR)/bin/telemetryapi github.com/sodafoundation/telemetry/cmd/telemetryapi
 
-osdslet:
-	go build -ldflags '-w -s' -o $(BUILD_DIR)/bin/osdslet github.com/sodafoundation/telemetry/cmd/osdslet
-osdsdock:
-	go build -ldflags '-w -s' -o $(BUILD_DIR)/bin/osdsdok github.com/sodafoundation/telemetry/cmd/osdsdock
+telemetryctl:
+	go build -ldflags '-w -s' -o $(BUILD_DIR)/bin/telemetryctl github.com/sodafoundation/telemetry/cmd/telemetryctl
+telemetrydock:
+	go build -ldflags '-w -s' -o $(BUILD_DIR)/bin/telemetrydock github.com/sodafoundation/telemetry/cmd/telemetrydock
 version:
 	@echo ${VERSION}
 
